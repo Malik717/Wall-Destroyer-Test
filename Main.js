@@ -1,26 +1,9 @@
-//Get income twice per second
-setInterval(getIncome(), 500);
-var income;
-var eff;
-
-//Get the current income
-function getIncome(){
-  var money = document.getElementById("resource-money")
-  var temp = money.innerText.substring(money.innerText.indexOf("(")+1);
-  income = temp.substring(0, temp.indexOf("/"))
-}
-
-//Loop all buildings that can be build and get their elements
-function getEff(){
-  var temp = new Array();
-  var elem = document.getElementsByClassName("thing button building nopic  disabled");
-  for(var i = 0; i <=elem.length; i++){
-    temp.push(elem[i].getElementsByClassName("amount")(0).innerText);
-  
-  
-  
-  }
-}
-
-
-
+setInterval(function() { document.getElementById('clickable-hitwall').click(); }, 10);							
+setInterval(function() { document.getElementById('building-puncher').click(); }, 500);							
+setInterval(function() { document.getElementById('building-clubber').click(); }, 500);		
+setInterval(function() { document.getElementById('building-swordsman').click(); }, 500);		
+setInterval(function() { document.getElementById('building-gunner').click(); }, 500);		
+setInterval(function() { document.getElementById('building-grenade').click(); }, 500);		
+setInterval(function() { document.getElementById('building-wreckingball').click(); }, 500);		
+setInterval(function() { document.getElementById('building-bulldozer').click(); }, 500);		
+setInterval(function() { document.getElementById('building-airstrike').click(); }, 500);		
